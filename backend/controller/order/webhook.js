@@ -65,12 +65,8 @@ const webhooks = async(request,response) => {
             payment_method_type : session.payment_method_types,
             payment_status : session.payment_status,
         },
-        shipping_options : session.shipping_options.map(s => {
-            return{  
-                ...s,
-                shipping_amount : s.shipping_amount / 100
-            }
-        }),
+       
+     
         totalAmount : session.amount_total / 100
       }
 
