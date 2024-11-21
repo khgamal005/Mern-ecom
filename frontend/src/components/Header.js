@@ -35,6 +35,7 @@ const Header = () => {
     if(data.success){
       toast.success(data.message)
      setUserDetails(null); //
+
       navigate("/")
     }
 
@@ -118,7 +119,7 @@ const Header = () => {
                           <div className='bg-red-600 text-white w-5 h-5 rounded-full p-1 
                           flex items-center justify-center absolute -top-2 -right-3'>
                               <p className='text-sm'>
-                              <p className='text-sm'>{context?.cartProductCount}</p>
+                              <p className='text-sm'>{context.cartProductCount}</p>
 
                               </p>
                           </div>
