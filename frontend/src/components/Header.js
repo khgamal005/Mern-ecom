@@ -35,7 +35,7 @@ const Header = () => {
     if(data.success){
       toast.success(data.message)
      setUserDetails(null); //
-
+        context.fetchUserAddToCart()
       navigate("/")
     }
 
